@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/JamieMagee/docker-rclone.svg?branch=master)](https://travis-ci.org/JamieMagee/docker-rclone)
 [![](https://images.microbadger.com/badges/image/jamiemagee/rclone.svg)](https://microbadger.com/images/jamiemagee/rclone)
 
 From [rclone.org](http://rclone.org):
