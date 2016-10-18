@@ -2,6 +2,6 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t jamiemagee/rclone
+  - docker build -t jamiemagee/rclone .
 script:
   - docker run --rm jamiemagee/rclone rclone --help
