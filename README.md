@@ -1,4 +1,4 @@
-[![](https://imagelayers.io/badge/kevineye/rclone:latest.svg)](https://imagelayers.io/?images=kevineye/rclone:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/jamiemagee/rclone.svg)](https://microbadger.com/images/jamiemagee/rclone)
 
 From [rclone.org](http://rclone.org):
 
@@ -16,27 +16,32 @@ Rclone is a command line program to sync files and directories to and from
   * Yandex Disk
   * The local filesystem
 
-
 ## Docker
 
 Show help message:
 
-    /usr/bin/docker run --rm \
-        kevineye/rclone \
-        rclone --help
+```
+/usr/bin/docker run --rm \
+    jamiemagee/rclone \
+    rclone --help
+```
 
 Interactive configuration:
 
-    touch rclone.conf
-    /usr/bin/docker run --rm -it \
-        -v "$PWD"/rclone.conf:/root/.rclone.conf \
-        kevineye/rclone \
-        rclone config
+```
+touch rclone.conf
+/usr/bin/docker run --rm -it \
+    -v "$PWD"/rclone.conf:/root/.rclone.conf \
+    jamiemagee/rclone \
+    rclone config
+```
 
 Example Dropbox sync:
 
-    /usr/bin/docker run --rm \
-        -v "$PWD"/rclone.conf:/root/.rclone.conf \
-        -v /path/to/Dropbox:/data \
-        kevineye/rclone \
-        rclone sync dropbox:/ /data
+```
+/usr/bin/docker run --rm \
+    -v "$PWD"/rclone.conf:/root/.rclone.conf \
+    -v /path/to/Dropbox:/data \
+    jamiemagee/rclone \
+    rclone sync dropbox:/ /data
+```       
