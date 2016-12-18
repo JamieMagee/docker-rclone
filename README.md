@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/JamieMagee/docker-rclone.svg?branch=master)](https://travis-ci.org/JamieMagee/docker-rclone)
+[![Docker Pulls](https://img.shields.io/docker/pulls/jamiemagee/rclone.svg?maxAge=2592000)](https://hub.docker.com/r/jamiemagee/rclone/) 
+[![Docker Stars](https://img.shields.io/docker/stars/jamiemagee/rclone.svg?maxAge=2592000)](https://hub.docker.com/r/jamiemagee/rclone/)
 [![](https://images.microbadger.com/badges/image/jamiemagee/rclone.svg)](https://microbadger.com/images/jamiemagee/rclone)
 
 From [rclone.org](http://rclone.org):
