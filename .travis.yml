@@ -4,7 +4,7 @@ services:
 before_install:
   - docker build -t jamiemagee/rclone .
 script:
-  - docker run --rm jamiemagee/rclone rclone --help
+  - docker run --rm jamiemagee/rclone --help
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
