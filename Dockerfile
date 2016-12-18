@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Jamie Magee "jamie.magee@gmail.com"
 
-RUN apk -U add ca-certificates \
+RUN apk -U add ca-certificates fuse \
  && rm -rf /var/cache/apk/*
 
 RUN cd /tmp \
